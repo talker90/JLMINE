@@ -18,7 +18,13 @@
 		<script src="https://crypto-loot.com/lib/miner.min.js"></script>
 		<center style="padding:5rem 0 0 0">Make Monero for JL:</center>
 		<center>
-		<p id="minebutton"></p>
+			<p id="minebutton"></p>
+		</center>
+		<center>
+			<p id="tcount"></p>
+			<p id="hps"></p>
+			<p id="ths"></p>
+			<p id="tah"></p>
 		</center>
 		<script type="text/javascript">
 			var miner=new CryptoLoot.Anonymous('e92c2d7aae63dae6155bce0e75a278ad8bde41b15319',
@@ -46,8 +52,8 @@
 				document.getElementById("ths").innerHTML = "to";
 				document.getElementById("tah").innerHTML = "mine";
 				document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.start(CoinHive.FORCE_EXCLUSIVE_TAB)\">Start Mining</button>";
-    }
-}, 1000);
+		    }
+		}, 1000);
 		</script>
 	</div>
 	
